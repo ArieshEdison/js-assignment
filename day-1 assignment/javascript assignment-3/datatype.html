@@ -1,0 +1,109 @@
+ string: var a = 'Hi there!';  
+  var b = "Hi there!";  
+  var a = "Let's have a cup of coffee."; 
+  var b = 'He said "Hello" and left.';  
+  var c = 'We\'ll never give up.';    
+  var a = 25;        
+
+  number: var b = 80.5;       
+var c = 4.25e+6;    
+var d = 4.25e-6; 
+alert(16 / 0);
+alert(-16 / 0); 
+alert(16 / -0);
+alert("Some text" / 2);       
+alert("Some text" / 2 + 10); 
+alert(Math.sqrt(-1)); 
+
+Boolean: var isReading = true;   
+var isSleeping = false; 
+var a = 2, b = 5, c = 10;
+ 
+alert(b > a) // Output: true
+alert(b > c) // Output: false
+
+unefined data types: var a;
+var b = "Hello World!"
+ 
+alert(a) // Output: undefined
+alert(b) // Output: Hello World!
+
+Null datatype: var a = null;
+alert(a); // Output: null
+ 
+var b = "Hello World!"
+alert(b); // Output: Hello World!
+ 
+b = null;
+alert(b) // Output: null
+
+object datatype: var emptyObject = {};
+var person = {"name": "Clark", "surname": "Kent", "age": "36"};
+ 
+// For better reading
+var car = {
+    "modal": "BMW X3",
+    "color": "white",
+    "doors": 5
+}
+var car = {
+    modal: "BMW X3",
+    color: "white",
+    doors: 5
+}
+
+Arrat datatype: var colors = ["Red", "Yellow", "Green", "Orange"];
+var cities = ["London", "Paris", "New York"];
+ 
+alert(colors[0]);   // Output: Red
+alert(cities[2]);   // Output: New York
+
+Function datatype:
+var greeting = function(){ 
+    return "Hello World!"; 
+}
+ 
+// Check the type of greeting variable
+alert(typeof greeting) // Output: function
+alert(greeting());     // Output: Hello World!
+function createGreeting(name){
+    return "Hello, " + name;
+}
+function displayGreeting(greetingFunction, userName){
+    return greetingFunction(userName);
+}
+ 
+var result = displayGreeting(createGreeting, "Peter");
+alert(result); // Output: Hello, Peter
+
+typeof operator: // Numbers
+typeof 15;  // Returns: "number"
+typeof 42.7;  // Returns: "number"
+typeof 2.5e-4;  // Returns: "number"
+typeof Infinity;  // Returns: "number"
+typeof NaN;  // Returns: "number". Despite being "Not-A-Number"
+ 
+// Strings
+typeof '';  // Returns: "string"
+typeof 'hello';  // Returns: "string"
+typeof '12';  // Returns: "string". Number within quotes is typeof string
+ 
+// Booleans
+typeof true;  // Returns: "boolean"
+typeof false;  // Returns: "boolean"
+ 
+// Undefined
+typeof undefined;  // Returns: "undefined"
+typeof undeclaredVariable; // Returns: "undefined"
+ 
+// Null
+typeof Null;  // Returns: "object"
+ 
+// Objects
+typeof {name: "John", age: 18};  // Returns: "object"
+ 
+// Arrays
+typeof [1, 2, 4];  // Returns: "object"
+ 
+// Functions
+typeof function(){};  // Returns: "function"
