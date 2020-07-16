@@ -1,0 +1,86 @@
+substring:
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>The substring() method extract a part of a string and returns the extracted parts in a new string:</p>
+
+<p id="demo"></p>
+
+<script>
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(7,13);
+document.getElementById("demo").innerHTML = res;
+</script>
+
+</body>
+</html>
+
+Replace:
+<!DOCTYPE html>
+<html>
+
+<body>
+
+<h2>JavaScript String Methods</h2>
+
+<p>Replace "Microsoft" with "W3Schools" in the paragraph below:</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo">Please visit Microsoft!</p>
+
+<script>
+function myFunction() {
+  var str = document.getElementById("demo").innerHTML; 
+  var txt = str.replace("Microsoft","W3Schools");
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
+
+charCodeAt:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>The charCodeAt() method returns the unicode of the character at a given position in a string:</p>
+
+<p id="demo"></p>
+
+<script>
+var str = "HELLO WORLD";
+document.getElementById("demo").innerHTML = str.charCodeAt(0);
+</script>
+
+</body>
+</html>
+
+Split:
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click "Try it" to display the first array element, after a string split.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var str = "a,b,c,d,e,f";
+  var arr = str.split(",");
+  document.getElementById("demo").innerHTML = arr[0];
+}
+</script>
+
+</body>
+</html>
+
+
+
