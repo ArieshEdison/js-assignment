@@ -1,0 +1,49 @@
+//Function to Add an Item to the array (our shopping list) created above.
+function Add_Item() {
+var item = document.getElementById('txtItem').value;
+}
+
+//Remove the last item from our list
+function Remove_Last(){
+
+}
+
+//Remove the first item from our list
+function Remove_First(){
+
+}
+
+//Completely empty our list
+function Clear(){
+//Set the length of your array to 0 to clear out any contents it has.
+}
+
+function Output_List(){
+var outputList = document.getElementById('outputList');
+outputList.innerHTML = '';
+
+//Use a for loop using yourArray.length and yourArray[index] to output each element of the array.
+//If you want it formatted to one item per line you can use similar code to what we have before:
+//outputList.innerHTML += '<p>' + yourArray[index] + '</p>';
+  
+}
+function init() {
+    var btnAddItem = document.getElementById('btnAddItem');
+    btnAddItem.onclick = Add_Item;
+    
+    var btnRemoveFirst = document.getElementById('btnRemoveFirst');
+    btnRemoveFirst.onclick = Remove_First;
+    
+    var btnRemoveLast = document.getElementById('btnRemoveLast');
+    btnRemoveLast.onclick = Remove_Last;
+    
+    var btnClear = document.getElementById('btnClear');
+    btnClear.onclick = Clear;
+    }
+    
+    window.onload = init;
+    </script>
+    
+    </body>
+    
+    </html>
