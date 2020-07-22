@@ -1,0 +1,22 @@
+function getUser(name){
+    fetch(`https://api.github.com/users/${name}`)
+     .then(function(response) {
+       return response.json();
+     })
+     .then(function(json) {
+       console.log(json);
+     });
+   };
+   
+   //get user data
+   getUser('yourUsernameHere');
+
+   async function getUserAsync(name) 
+{
+  let response = await fetch(`https://api.github.com/users/${name}`);
+  let data = await response.json()
+  return data;
+}
+
+getUserAsync('yourUsernameHere')
+  .then(data => console.log(data)); 
